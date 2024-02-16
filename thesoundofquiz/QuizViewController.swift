@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class QuizViewController: UIViewController {
-
+     
+    @IBOutlet var player: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
