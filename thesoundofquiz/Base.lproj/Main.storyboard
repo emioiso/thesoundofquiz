@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82f-mY-Ero">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -49,13 +49,14 @@
                         <viewLayoutGuide key="safeArea" id="sUh-zl-r80"/>
                         <color key="backgroundColor" red="1" green="0.92549019607843142" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VOW-XP-clb"/>
                     <connections>
                         <outlet property="player" destination="nb9-M7-q0l" id="gWN-Q5-I4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zro-os-E3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.40000000000001" y="4.9475262368815596"/>
+            <point key="canvasLocation" x="1748" y="4.9475262368815596"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="eiw-Ao-Epj">
@@ -104,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7J-79-dCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="594.375" y="4.225352112676056"/>
+            <point key="canvasLocation" x="2471.1999999999998" y="4.0479760119940034"/>
         </scene>
     </scenes>
     <resources>
