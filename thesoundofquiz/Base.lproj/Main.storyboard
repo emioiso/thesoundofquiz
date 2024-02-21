@@ -4,13 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Quiz View Controller-->
         <scene sceneID="ZSy-j6-J2n">
             <objects>
-                <viewController id="82f-mY-Ero" customClass="QuizViewController" customModule="thesoundofquiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="82f-mY-Ero" customClass="QuizViewController" customModule="thesoundofquiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vq0-w5-BsQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,49 +129,36 @@
                                     <constraint firstAttribute="height" constant="340" id="Dr2-GQ-mTG"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="47.5" translatesAutoresizingMaskIntoConstraints="NO" id="BRw-ne-rAS">
-                                <rect key="frame" x="20" y="430" width="350" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQq-wL-ZVe">
+                                <rect key="frame" x="0.0" y="537" width="240" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JCS-NG-MQ3">
-                                        <rect key="frame" x="0.0" y="0.5" width="80" height="79.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89X-SA-ENJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="6En-yG-Zoa"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="MCN-Lh-kQl"/>
+                                            <constraint firstAttribute="height" constant="80" id="Whx-K6-oee"/>
+                                            <constraint firstAttribute="width" constant="80" id="wxY-PY-qyW"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-0E-2Qk">
-                                        <rect key="frame" x="127.5" y="-1" width="80" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Q / A"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-gW-bdd">
+                                        <rect key="frame" x="80" y="0.0" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="6E2-3M-vlj"/>
-                                            <constraint firstAttribute="height" constant="80" id="PpN-Ah-7Cq"/>
-                                            <constraint firstAttribute="width" constant="80" id="qMP-rK-HrQ"/>
+                                            <constraint firstAttribute="width" constant="80" id="fDA-Bu-Sv5"/>
+                                            <constraint firstAttribute="height" constant="80" id="uxI-BF-zwg"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-Je-Zc7">
-                                        <rect key="frame" x="255" y="-2.5" width="95" height="82.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="HOME"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-mD-Vga">
+                                        <rect key="frame" x="160" y="0.0" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="A5h-4f-aGW"/>
-                                            <constraint firstAttribute="height" constant="80" id="iep-cG-lAw"/>
+                                            <constraint firstAttribute="width" constant="80" id="dRn-ro-kfr"/>
                                         </constraints>
-                                    </imageView>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="share"/>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="JCS-NG-MQ3" firstAttribute="top" secondItem="BRw-ne-rAS" secondAttribute="top" id="5mG-JG-H3a"/>
-                                    <constraint firstItem="KWT-Je-Zc7" firstAttribute="top" secondItem="BRw-ne-rAS" secondAttribute="top" id="8lk-YB-h1N"/>
-                                    <constraint firstAttribute="bottom" secondItem="JCS-NG-MQ3" secondAttribute="bottom" id="AeO-qs-kFX"/>
-                                    <constraint firstItem="KWT-Je-Zc7" firstAttribute="top" secondItem="BRw-ne-rAS" secondAttribute="top" id="CQl-Op-v9v"/>
-                                    <constraint firstAttribute="bottom" secondItem="Y6F-0E-2Qk" secondAttribute="bottom" id="EGJ-Yi-d2D"/>
-                                    <constraint firstItem="Y6F-0E-2Qk" firstAttribute="top" secondItem="BRw-ne-rAS" secondAttribute="top" id="I6W-Pe-lKE"/>
-                                    <constraint firstAttribute="bottom" secondItem="KWT-Je-Zc7" secondAttribute="bottom" id="PMp-XO-s49"/>
-                                    <constraint firstAttribute="trailing" secondItem="KWT-Je-Zc7" secondAttribute="trailing" id="VVM-ml-iZA"/>
-                                    <constraint firstItem="Y6F-0E-2Qk" firstAttribute="leading" secondItem="JCS-NG-MQ3" secondAttribute="trailing" constant="47.5" id="WHb-yf-ZeJ"/>
-                                    <constraint firstItem="KWT-Je-Zc7" firstAttribute="leading" secondItem="Y6F-0E-2Qk" secondAttribute="trailing" constant="47.5" id="adz-re-aG1"/>
-                                    <constraint firstAttribute="width" constant="350" id="awa-SZ-ZO2"/>
-                                    <constraint firstItem="JCS-NG-MQ3" firstAttribute="leading" secondItem="BRw-ne-rAS" secondAttribute="leading" id="bM0-Nt-GiG"/>
-                                    <constraint firstAttribute="bottom" secondItem="KWT-Je-Zc7" secondAttribute="bottom" id="cQg-cp-xE8"/>
-                                    <constraint firstItem="JCS-NG-MQ3" firstAttribute="centerY" secondItem="BRw-ne-rAS" secondAttribute="centerY" id="nRF-fX-BVc"/>
-                                    <constraint firstItem="KWT-Je-Zc7" firstAttribute="centerY" secondItem="BRw-ne-rAS" secondAttribute="centerY" id="zjw-4h-ETW"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bpb-Zn-OC8"/>
@@ -178,31 +166,38 @@
                         <color key="tintColor" red="0.52941176469999995" green="0.74509803919999995" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yqV-t6-rrb" firstAttribute="top" secondItem="bpb-Zn-OC8" secondAttribute="top" constant="50" id="0ya-XD-BSe"/>
-                            <constraint firstItem="bpb-Zn-OC8" firstAttribute="trailing" secondItem="BRw-ne-rAS" secondAttribute="trailing" constant="20" id="1Ib-Dq-WxF"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="HNM-LR-bqu"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="IP0-ov-cjW"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="top" secondItem="yqV-t6-rrb" secondAttribute="bottom" constant="40" id="Vgu-0F-0pv"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="centerX" secondItem="6Po-Ld-yJF" secondAttribute="centerX" id="bnB-UO-jNC"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="centerX" secondItem="6Po-Ld-yJF" secondAttribute="centerX" id="gtA-zf-VmB"/>
-                            <constraint firstItem="BRw-ne-rAS" firstAttribute="centerX" secondItem="6Po-Ld-yJF" secondAttribute="centerX" id="qrv-TM-lUH"/>
                             <constraint firstItem="yqV-t6-rrb" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="wlb-fT-IoA"/>
-                            <constraint firstAttribute="trailing" secondItem="BRw-ne-rAS" secondAttribute="trailing" constant="20" id="zWU-gP-9NT"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7J-79-dCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471.1999999999998" y="4.0479760119940034"/>
+            <point key="canvasLocation" x="2725.5999999999999" y="4.9475262368815596"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SWt-Vn-kyF">
+            <objects>
+                <viewController id="EdM-Gb-Sqr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sOB-Tw-skc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Olb-8w-vFV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-El-xiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3748" y="5"/>
         </scene>
     </scenes>
     <resources>
         <image name="brain.head.profile" catalog="system" width="120" height="128"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="paperplane" catalog="system" width="128" height="119"/>
         <image name="play.fill" catalog="system" width="117" height="128"/>
-        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <image name="waveform.path" catalog="system" width="128" height="113"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
