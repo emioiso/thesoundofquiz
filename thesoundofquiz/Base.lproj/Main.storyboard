@@ -130,20 +130,20 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="47.5" translatesAutoresizingMaskIntoConstraints="NO" id="LQq-wL-ZVe">
-                                <rect key="frame" x="16" y="418" width="355" height="80"/>
+                                <rect key="frame" x="20" y="440" width="335" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89X-SA-ENJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="3fQ-S5-vNn"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="Ah5-5n-89K"/>
                                             <constraint firstAttribute="height" constant="80" id="Whx-K6-oee"/>
-                                            <constraint firstAttribute="width" constant="335" id="hex-JV-WNj"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Q / A"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-gW-bdd">
-                                        <rect key="frame" x="147.5" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="127.5" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="fDA-Bu-Sv5"/>
                                             <constraint firstAttribute="height" constant="80" id="uxI-BF-zwg"/>
@@ -152,7 +152,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="HOME"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-mD-Vga">
-                                        <rect key="frame" x="275" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="255" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Lpc-71-qBZ"/>
                                             <constraint firstAttribute="width" constant="80" id="dRn-ro-kfr"/>
@@ -162,14 +162,8 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="89X-SA-ENJ" firstAttribute="centerX" secondItem="LQq-wL-ZVe" secondAttribute="centerX" id="8zx-We-juw"/>
-                                    <constraint firstItem="89X-SA-ENJ" firstAttribute="centerY" secondItem="LQq-wL-ZVe" secondAttribute="centerY" id="Nga-Vw-30G"/>
                                     <constraint firstItem="Ggd-gW-bdd" firstAttribute="leading" secondItem="89X-SA-ENJ" secondAttribute="trailing" constant="47.5" id="Noe-U3-ZRY"/>
-                                    <constraint firstAttribute="width" constant="355" id="dcS-p1-e50"/>
-                                    <constraint firstItem="Ggd-gW-bdd" firstAttribute="centerY" secondItem="LQq-wL-ZVe" secondAttribute="centerY" id="gWv-re-2x2"/>
                                     <constraint firstItem="TJJ-mD-Vga" firstAttribute="leading" secondItem="Ggd-gW-bdd" secondAttribute="trailing" constant="47.5" id="qZs-Ob-jlv"/>
-                                    <constraint firstItem="TJJ-mD-Vga" firstAttribute="centerY" secondItem="LQq-wL-ZVe" secondAttribute="centerY" id="tPx-vL-eT3"/>
-                                    <constraint firstItem="89X-SA-ENJ" firstAttribute="top" secondItem="LQq-wL-ZVe" secondAttribute="top" constant="50" id="yT9-Ah-1MK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -178,20 +172,15 @@
                         <color key="tintColor" red="0.52941176469999995" green="0.74509803919999995" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yqV-t6-rrb" firstAttribute="top" secondItem="bpb-Zn-OC8" secondAttribute="top" constant="50" id="0ya-XD-BSe"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="centerY" secondItem="6Po-Ld-yJF" secondAttribute="centerY" id="KLu-p5-kg4"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="centerY" secondItem="6Po-Ld-yJF" secondAttribute="centerY" id="M28-CA-icW"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="top" secondItem="yqV-t6-rrb" secondAttribute="bottom" constant="50" id="ef6-2u-g5K"/>
-                            <constraint firstItem="bpb-Zn-OC8" firstAttribute="trailing" secondItem="LQq-wL-ZVe" secondAttribute="trailing" constant="20" id="jex-zH-zNt"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="lhf-ws-kZy"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="otg-D7-puu"/>
-                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="top" secondItem="6Po-Ld-yJF" secondAttribute="top" constant="50" id="sok-Wg-DE4"/>
+                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="centerX" secondItem="6Po-Ld-yJF" secondAttribute="centerX" id="kGY-XO-Pi5"/>
                             <constraint firstItem="yqV-t6-rrb" firstAttribute="leading" secondItem="bpb-Zn-OC8" secondAttribute="leading" constant="20" id="wlb-fT-IoA"/>
+                            <constraint firstItem="LQq-wL-ZVe" firstAttribute="top" secondItem="yqV-t6-rrb" secondAttribute="bottom" constant="50" id="yFU-l6-aOo"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7J-79-dCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725.5999999999999" y="4.9475262368815596"/>
+            <point key="canvasLocation" x="2615" y="15"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SWt-Vn-kyF">
@@ -206,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-El-xiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3748" y="5"/>
+            <point key="canvasLocation" x="3452" y="15"/>
         </scene>
     </scenes>
     <resources>
